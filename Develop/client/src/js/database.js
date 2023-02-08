@@ -1,3 +1,4 @@
+
 import { openDB } from 'idb';
 
 const initdb = async () =>
@@ -15,7 +16,7 @@ const initdb = async () =>
   export const putDb = async (content)  => {
    
   
-    // make a connection to the database and version that is used.
+    // a connection is established to the database and version that is used.
     const contactDb = await openDB('jate', 1);
   
     // make a new transaction and specify the database and data privileges.
